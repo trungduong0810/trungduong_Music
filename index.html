@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="play-music">
+        <div class="dashboard">
+            <div class="header">
+                <h4 class="title">Now Playing: </h4>
+                <h2 class="name-song">Monody</h2>
+            </div>
+
+            <div class="cd">
+                <img class="img" src="" alt="">
+            </div>
+
+            <div class="control">
+                <div class="replay">
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="pre">
+                    <i class="fa-solid fa-backward-step"></i>                    
+                </div>
+                <div class="block-play-pause">
+                    <div class="play">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="pause">
+                        <i class="fa-solid fa-pause"></i>
+                    </div>
+                </div>
+                <div class="next">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+                <div class="random">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+
+            <input class="progress" type="range" min="0" max="100" value="0" step="1">
+            <audio id="audio" src=""></audio>
+            
+        </div>
+        <!-- ------------ list song ------------ -->
+
+        <div class="list-song"> </div>
+        
+            
+    </div>
+    
+    <script src="./assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-image: linear-gradient(#cc5333, #23074d) ;
+}
+.play-music{
+    margin: auto;
+    width: 400px;
+    border: 1px solid rgb(178, 174, 174);
+    border-radius: 4px;
+    box-shadow: 2px 1px 4px 0px rgb(178 174 174);
+}
+.dashboard{
+    border-radius: 0px 0px 4px 4px;
+    padding: 12px;
+    background-image: linear-gradient(rgb(247, 151, 167) 30%, rgb(229, 191, 120));
+    width: 100%;
+    max-width: 400px;
+    position: fixed;
+    top: 0;
+}
+.header{
+    text-align: center;
+}
+.header .title{
+    color: rgb(252, 252, 252);
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.header .name-song{
+    color: #970421;
+    margin-bottom: 12px;
+}
+.cd{
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+.img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.control{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.progress{
+    width: 100%;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+/* * danh sách bài hát  */
+
+.list-song{
+    width: 90%;
+    margin: auto;
+    margin-top: 440px;
+    cursor: pointer;
+}
+.list-item:hover{
+    opacity: 0.9;
+}
+.list-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+    padding:4px 16px;
+    margin: 12px 0px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+.avatar-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.add:hover{
+   color: rgb(255, 255, 255);
+}
+.info{
+    text-align: center;
+}
+/* control  */
+.block-play-pause{
+    position: relative;
+    background-color: rgb(205, 63, 63);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+}
+.play, .pause{
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 50px;
+    transition: all 0.2s;
+    
+}
+.pause{
+    display: none;
+}
+.pre:hover, .next:hover, .random:hover, .replay:hover{
+    color: red;
+    transition: all 0.2s;
+}
+.active{
+    background-image: linear-gradient(#e1eec3, #f05053);
+    
+}
+.active .name{
+    color: #970421;
+    margin-bottom: 5px;
+}
+.active .singer{
+    color: white;
+}
